@@ -4,7 +4,7 @@ metadata:
   name: hello-world-tkn
 spec:
   type: image
-  parmans:
+  params:
     - name: url
       value: gcr.io/wmd-test/hello-world-tkn
 
