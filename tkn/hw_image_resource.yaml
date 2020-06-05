@@ -1,0 +1,10 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: hello-world-tkn
+spec:
+  type: image
+  parmans:
+    - name: url
+      value: gcr.io/wmd-test/hello-world-tkn
+
