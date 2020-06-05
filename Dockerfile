@@ -8,10 +8,10 @@ ADD . /go/src/github.com/R2wenD2/cb
 # Build the outyet command inside the container.
 # (You may fetch or manage dependencies here,
 # either manually or with a tool like "godep".)
-RUN go install github.com/R2wenD2/cb
+RUN go install -i github.com/R2wenD2/cb/main
 
 # Run the outyet command by default when the container starts.
-ENTRYPOINT /go/bin/cb
+ENTRYPOINT /go/bin/main
 
 # Document that the service listens on port 8080.
 EXPOSE 8080
