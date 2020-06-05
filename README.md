@@ -1,2 +1,2 @@
 # cb
-Repo for tutorials and tests with cloud build
+A toy repo for trying out ci projects. 
