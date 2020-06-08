@@ -1,12 +1,11 @@
-
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
   name: build-docker-image-from-git-source
 spec:
-  steps:
+  params:
     - name: pathToDockerFile
-type: string
+      type: string
       description: The path to the dockerfile to build
       default: $(resources.inputs.docker-source.path)/Dockerfile
     - name: pathToContext

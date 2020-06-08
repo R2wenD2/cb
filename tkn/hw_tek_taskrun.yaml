@@ -10,13 +10,13 @@ spec:
     - name: pathToDockerFile
       value: Dockerfile
     - name: pathToContext
-      value: $(resources.inputs.docker-source.path)/examples/microservices/leeroy-web #configure: may change according to your source
+      value: $(resources.inputs.docker-source.path)/ 
   resources:
     inputs:
       - name: docker-source
         resourceRef:
           name: cb-git
-   outputs:
+    outputs:
       - name: builtImage
         resourceRef:
           name:  hello-world-tkn
