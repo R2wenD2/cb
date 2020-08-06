@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: TaskRun
 metadata:
-  name: build-docker-image-from-git-source-task-run
+  generateName: cb-hw-pipeline-
 spec:
   serviceAccountName: tutorial-service
   taskRef:
@@ -10,7 +10,7 @@ spec:
     - name: pathToDockerFile
       value: Dockerfile
     - name: pathToContext
-      value: $(resources.inputs.docker-source.path)/ 
+      value: $(resources.inputs.docker-source.path)
   resources:
     inputs:
       - name: docker-source
