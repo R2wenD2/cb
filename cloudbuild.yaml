@@ -3,4 +3,4 @@ steps:
   args: ['echo', 'hello world!']
 options:
   cluster:
-    name: projects/wlynch-test/locations/us-east1/clusters/cb4a1
+    name: projects/wmd-test/locations/us-east1/clusters/cb4a1
