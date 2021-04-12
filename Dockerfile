@@ -8,7 +8,7 @@ ADD . /go/src/github.com/R2wenD2/cb
 # Build the outyet command inside the container.
 # (You may fetch or manage dependencies here,
 # either manually or with a tool like "godep".)
-RUN go install -i github.com/R2wenD2/cb/main
+RUN go install -i github.com/R2wenD2/cb/main@latest
 
 # Run the outyet command by default when the container starts.
 ENTRYPOINT /go/bin/main
